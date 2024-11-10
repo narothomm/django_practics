@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+    <h2>Contact us I inherite from layout page </h2>
+
+    <header>
+        <h1> <b> {{emailaddress}} </b> </h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact</h2>
+           
+        </section>
+    </main>
+    <ul>
+        {% for profile in socialprofiles %}
+        <li>{{ profile }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        Our headquarters is in 
+        {% if hq == "d" %}
+        <strong>Dhaka</strong>
+        {% elif hq == "k" %}
+        <strong>Khulna</strong>
+        {% elif hq == "r" %}
+        <strong>Rajshahi</strong>
+        {% else %}
+        <strong>Area</strong>
+        {% endif %}
+    </p>
+    <footer>
+        <p> {{footer}} </p>
+    </footer>
+
+    
+    {% endblock %}

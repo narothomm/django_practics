@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% load static %}
+
+    <h2>Index us </h2>
+   
+     <header>
+        <h1> <b>{{ pagetitle }} </b> </h1>
+    </header>
+  
+    <main>
+        <section>
+            <h2>Index</h2>
+            <p><h2>{{content}}<h2></p>
+        </section>
+    </main>
+
+    <footer>
+        <p> {{footer}} </p>
+    </footer>
+  
+    <p> 
+        <img width="300" src="{% static 'image/img2.jpeg' %}" alt="">
+    </p>
+
+    {% block title %}
+        Index us and us 
+    {% endblock %}   
+
+    {% endblock %}
