@@ -1,0 +1,36 @@
+[
+   {
+      "model":"todo_app.task",
+      "pk": 1,
+      "fields":{
+         "title":"By milk",
+         "description":"Get 2% milk from the store",
+         "completed":false,
+         "created_at": "2022-02-02 12:00:00"
+      }
+   },
+
+   {
+      "model":"todo_app.task",
+      "pk":2,
+      "fields":{
+         "title":"Study exam",
+         "description":"Revew notes",
+         "completed": true,
+         "created_at":"2022-02-02 12:00:00"
+      }
+
+   },
+   
+   {
+      "model":"todo_app.task",
+      "pk":3,
+      "fields":{
+         "title":"Final exam",
+         "description":"Write notes",
+         "completed": false,
+         "created_at":"2022-02-02 12:00:00"
+      }
+   } 
+
+]
